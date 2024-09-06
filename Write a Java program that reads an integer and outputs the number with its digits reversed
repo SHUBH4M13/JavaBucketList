@@ -1,0 +1,15 @@
+import java.util.Scanner; //library imported for input purpose
+class integer {
+    public static void main(String[] args) {
+    Scanner inp = new Scanner(System.in); //taking input
+    int a = inp.nextInt();
+    int dubl = a; //dublcation of variable a
+    int reverse_number = 0 ;
+    while( dubl != 0){
+        int Last_digit = dubl % 10; //extracting last_digit
+        reverse_number = Last_digit + reverse_number * 10 ; 
+        dubl = dubl / 10;
+    }
+    System.out.println("Reverse : " + reverse_number);
+}
+};
